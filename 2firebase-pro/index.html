@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de herramientas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body style="visibility: hidden;">
+
+    <div class="container">
+        <div class="formulario">
+            <form id="tool-form">
+                <div class="header-form" id="header-form">
+                    <h2 class="titulo-form">Pañol-Herramientas</h2>
+                    <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
+                </div>
+                <div class="contenido-form" id="contenido-form">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="nombre de la herramienta" id="tool-title" class="tool-titulo" name="nombre">
+
+                    <label>Función</label>
+                    <textarea id="funcion" class="funcion" rows="3" placeholder="descripcion herramienta" name="funcion"></textarea>
+                    
+                    <button id="btn-tool-save" name="btn-tool-save" class="btn-guardar">Guardar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="lista-herramientas">
+            <div class="tools-container" id="tools-container"></div>
+        </div>
+
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>

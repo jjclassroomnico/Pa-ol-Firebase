@@ -1,0 +1,174 @@
+/* Fondo general con textura de escritorio */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1d8e0;
+}
+
+/* El Login es ahora la tapa de la libreta */
+#login-form {
+    background: #fff;
+    padding: 60px 40px;
+    width: 320px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+    
+    /* Textura de papel */
+    background-image: radial-gradient(#d1d8e0 8px, transparent 8px);
+    background-size: 40px 40px;
+    border-radius: 5px;
+}
+
+/* Título estilo manuscrito en la portada */
+#login-form h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 30px;
+    border-bottom: 2px dashed #bbb; /* Línea de corte */
+    padding-bottom: 10px;
+}
+
+/* Inputs como renglones */
+#login-form input {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+#login-form input:focus {
+    outline: none;
+    border-bottom: 2px solid #5c67f2;
+}
+
+/* Botón como una etiqueta o sello */
+#login-form button {
+    background: #5c67f2;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+#login-form button:hover {
+    transform: scale(1.05);
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+input, textarea {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    background: transparent; 
+    width: 100%;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+body {
+    background-color: #d1d8e0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#tool-form {
+    background: #fff;
+    padding: 40px 40px 40px 60px;
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    
+    /* El truco de los agujeros (Izquierda) */
+    background-image: radial-gradient(#b3b3b3 8px, transparent 8px),
+                      linear-gradient(#b3b3b3 1px, transparent 1px);
+    background-size: 40px 40px, 100% 2em; /* 40px para los agujeros, 2em para renglones */
+    background-position: 10px 0, 0 0;
+    background-repeat: repeat-y, repeat;
+    line-height: 2em;
+}
+
+#tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn-logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-tarea {
+    background: #fff;
+    padding: 20px 20px 20px 40px;
+    margin: 15px;
+    display: inline-block;
+    width: 200px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    background-image: radial-gradient(#b3b3b3 5px, transparent 5px),
+                      linear-gradient(#b3b3b3 1px, transparent 1px);
+    background-size: 30px 30px, 100% 2em;
+    background-position: 5px 0, 0 0;
+    background-repeat: repeat-y, repeat;
+    transform: rotate(-1deg);
+}
+
+.btn-guardar {
+    margin-top: 20px;
+    background: #5c67f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn-delete {
+    font-family: 'Patrick Hand', cursive;
+background-color: #dd9797;
+border-radius: 1rem;
+}
+
+.btn-edit {
+    font-family: 'Patrick Hand', cursive;
+background-color: #979cdd;
+border-radius: 1rem;
+}
+#funcion {
+    resize: none; 
+    height: 100px;
+    overflow-y: auto;
+    width: 100%;
+}
